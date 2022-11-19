@@ -1,0 +1,147 @@
+
+body {
+   display: flex;
+   justify-content: center;
+      
+
+   .todo-tasks {
+      width: 500px;
+      height: 670px;
+      background-color:#F5CBA7  ;
+      border-radius: 20px;
+      border: 2px solid black;
+      .information {
+         display: flex;
+         flex-direction: column;
+         align-items: center;
+
+         input {
+            height: 45px;
+            border-radius: 5px;
+            border: 1px solid black;
+            font-size: 18px;
+            font-weight: 700;
+         }
+      }
+
+      .add-task {
+         border: 1px solid black;
+         padding: 10px 40px;
+         background-color: #FFD700;
+         border-radius: 6px;
+         font-weight: 700;
+         font-size: 17px;
+         margin-top: 10px;;
+         &:hover {
+            background-color: #DC143C;
+            
+         }
+      }
+
+      .container-tasks {
+         margin: 20px 0 0 0px;
+
+         ul {
+            list-style: none;
+            margin:  0;
+            padding: 0;
+
+            li {
+               
+               .task-item {
+                  background-color: #FAE5D3  ;
+                  display: flex;
+                  justify-content: space-between;
+                  align-items: center;
+                  width: 500px;
+                  border-top: 1px solid black;
+                  
+                  
+                  p {
+                     font-weight: 700;
+                  }
+
+                  .div-buttons {
+                     display: flex;
+                     align-items: center;
+                     justify-content: space-between;
+                     width: 11 0px;
+                  }
+                  .done-status {
+                     border: 1px solid black;
+                     background-color: limegreen;
+                     width: 50px;
+                     height: 30px;
+                     border-radius: 15px;
+                     &:hover {
+                        background-color: #11B3EB;
+                     }
+                  }
+
+                  .not-done-status {
+                     border: 1px solid black;
+                     background-color: red;
+                     font-size: 25px;
+                     width: 50px;
+                     height: 30px;
+                     border-radius: 15px;
+                     &:hover {
+                        background-color: #D68910;
+                     }
+                  }
+
+
+                  
+               }
+            }
+            
+         }
+
+         .title-div {
+            display: flex;
+            justify-content: center;
+            width: 500px;
+            
+            // border-bottom: 1px solid black;
+
+            h2 {
+               font-size: 17px;
+            }
+         }
+      }
+
+
+   }
+
+
+   
+
+
+
+
+
+
+
+
+
+
+}
+
+
+
+.doneText {
+   color: green;
+   
+}
+
+.changeDoneBtn {
+   border: 1px solid black;
+   background-color: #1CA3B9 ;
+   font-size: 15px;
+   width: 50px;
+   height: 30px;
+   border-radius: 15px;
+   &:hover {
+      background-color: #53868E;
+   }
+}
